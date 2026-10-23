@@ -11,11 +11,3 @@ Independent PyTorch reproductions of three figures for **Advanced Machine Learni
 ## How to run
 
 Open a notebook in its recommended environment, enable the GPU, and **Run All**. Setup cells install/import dependencies and download CIFAR-10, MNIST, or dSprites as needed. Each notebook trains models and generates its figures from measured results. No pretrained weights are required.
-
-## Notes
-
-- **Zhang:** Uses a reduced corruption grid (`p = 0, 0.5, 1`); AlexNet at `p = 1` did not meet the 99% convergence threshold.
-- **Keskar:** Uses one SB/LB pair per architecture and gradient accumulation for large batches; results differ numerically from the paper.
-- **Higgins:** Trains β = 1 and β = 4 with two seeds each; latent ordering and directions can vary.
-
-The accompanying report documents implementation choices, discrepancies, critical reviews, and LLM chat links.
